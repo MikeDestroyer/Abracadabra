@@ -24,9 +24,7 @@
 
 
 body {
-  background-color: #F6F6F6;  
-  width: 1200px;
-  height: 675px;
+  background-color: #F6F6F6;
   font-family: ArialMT,AdobeInvisFont,MyriadPro-Regular; 
 }
 .ib {
@@ -34,9 +32,10 @@ body {
 }
 .card {
   background-color: #FFFFFF;  
+  display: block;
   width: 1011px;
   height: 504px;
-  margin: 85px 95px 86px 94px;
+  margin: 85px auto 86px auto;
   border: solid 1px #E4E4E4;
   
 }

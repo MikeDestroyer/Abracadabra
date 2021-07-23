@@ -1,7 +1,88 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box ;
+  vertical-align: top;
+ 
 }
+@font-face {
+  font-family: Arial-BoldMT;
+  src: url(../fonts/arialbd.ttf);
+}
+@font-face {
+  font-family: AdobeInvisFont;
+  src: url(../fonts/ADOIF_.PFB.ttf);
+}
+@font-face {
+  font-family: MyriadPro-Regular;
+  src: url(../fonts/MyriadPro-Regular.ttf);
+}
+@font-face {
+  font-family: ArialMT;
+  src: url(../fonts/ArialMT.ttf);
+}
+
+
 body {
-  height: 1200px;
-  width: 675px;
+  background-color: #F6F6F6;  
+  width: 1200px;
+  height: 675px;
+  font-family: ArialMT,AdobeInvisFont,MyriadPro-Regular; 
+}
+.ib {
+  display: inline-block;
+}
+.card {
+  background-color: #FFFFFF;  
+  width: 1011px;
+  height: 504px;
+  margin: 85px 95px 86px 94px;
+  border: solid 1px #E4E4E4;
+  
+}
+.card-info {
+  width: 480px;
+}
+.card-img {
+  margin: 64px 99px 63px 48px;
+}
+.name {
+  width: 178px;
+  height: 22px;
+  font-family: Arial-BoldMT,AdobeInvisFont,MyriadPro-Regular;
+  margin: 94px 0px 30px -4px;
+  font-size: 22px;
+}
+.description {
+  width: 393px;
+  height: 50px;
+  margin: 0px 0px 55px -3px;
+  font-size: 14px;
+}
+.price-word {
+width: 35px;
+height: 14px;
+margin: 0px 300px 23px -3px;
+font-size: 14px;
+}
+.price {
+  width: 103px;
+  height: 28px;
+  font-size: 28px;
+  margin: 0px 300px 55px -1px;
+}
+.bnt-cart {
+  background-color: #EC744A;
+  width: 253px;
+  height: 51px;
+  margin: 0px 0px 0px -2px;
+  text-align: center;
+  line-height: 50px;
+  color: #FFFFFF;
+  vertical-align: middle;
+}
+.btn-cart-txt {
+  width: 174px;
+  height: 18px;
+  font-size: 17px;
 }

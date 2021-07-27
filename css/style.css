@@ -1,87 +1,87 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box ;
-  vertical-align: top;
- 
 }
 @font-face {
-  font-family: Arial-BoldMT;
-  src: url(../fonts/arialbd.ttf);
+  font-family: ProximaNova-Light;
+  src: url(/fonts/ProximaNova-Light.ttf);
+}
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url(/fonts/ProximaNova-Regular.ttf);
+}
+@font-face {
+  font-family: ProximaNova-Bold;
+  src: url(/fonts/ProximaNova-Bold.ttf);
 }
 @font-face {
   font-family: AdobeInvisFont;
-  src: url(../fonts/ADOIF_.PFB.ttf);
+  src: url();
 }
 @font-face {
   font-family: MyriadPro-Regular;
-  src: url(../fonts/MyriadPro-Regular.ttf);
+  src: url();
 }
-@font-face {
-  font-family: ArialMT;
-  src: url(../fonts/ArialMT.ttf);
-}
-
-
-body {
-  background-color: #F6F6F6;
-  font-family: ArialMT,AdobeInvisFont,MyriadPro-Regular; 
-}
-.ib {
-  display: inline-block;
-}
-.card {
-  background-color: #FFFFFF;  
-  display: block;
-  width: 1011px;
-  height: 504px;
-  margin: 85px auto 86px auto;
-  border: solid 1px #E4E4E4;
-  
-}
-.card-info {
-  width: 480px;
-}
-.card-img {
-  margin: 64px 99px 63px 48px;
+.container {
+  display: flex;
+  flex-direction:column ;
+  /* border: blue solid 2px; */
+  align-items:center;
 }
 .name {
-  width: 178px;
-  height: 22px;
-  font-family: Arial-BoldMT,AdobeInvisFont,MyriadPro-Regular;
-  margin: 94px 0px 30px -4px;
-  font-size: 22px;
+  display: inline-block;
+  margin: 100px 0px 120px 0px;
+  font-family: ProximaNova-Regular;
+  font-size: 36px;
 }
-.description {
-  width: 393px;
-  height: 50px;
-  margin: 0px 0px 55px -3px;
-  font-size: 14px;
+.card-window {
+  display: flex;
+  width: 1140px;
+  flex-direction:row ;
+  justify-content: space-between;
+/* border: black solid 2px; */
 }
-.price-word {
-width: 35px;
-height: 14px;
-margin: 0px 300px 23px -3px;
-font-size: 14px;
+.card {
+  /* background-color: beige; */
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  /* border: red solid 2px; */
+  width: 265px;
+  height: 370px;
 }
-.price {
-  width: 103px;
-  height: 28px;
-  font-size: 28px;
-  margin: 0px 300px 55px -1px;
+.card-image {
+  /* margin-top: 30px; */
 }
-.bnt-cart {
-  background-color: #EC744A;
-  width: 253px;
-  height: 51px;
-  margin: 0px 0px 0px -2px;
-  text-align: center;
-  line-height: 50px;
-  color: #FFFFFF;
-  vertical-align: middle;
 }
-.btn-cart-txt {
-  width: 174px;
-  height: 18px;
-  font-size: 17px;
+.card-description {
+  margin-bottom: 10px;
+  font-family: ProximaNova-Light;
+  font-size: 18px;
+}
+.card-price {
+  margin-bottom: 10px;
+  font-family: ProximaNova-Bold;
+  font-size: 18px;
+}
+.card-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 55px;
+  border: #23bac1 solid 1px;
+  color: #23bac1;
+  font-family: ProximaNova-Bold;
+  font-size: 16px;
+  text-decoration: none;
+}
+.img-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 212px;
+  height: 212px;
+  overflow: hidden;
 }

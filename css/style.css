@@ -1,83 +1,173 @@
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('/fonts/HelveticaNeueCyr-Medium.ttf');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('/fonts/HelveticaNeueCyr-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
-@font-face {
-  font-family: ProximaNova-Light;
-  src: url(/fonts/ProximaNova-Light.ttf);
+body {
+  color: #32325F;
+  font-family: HelveticaNeueCyr;
 }
-@font-face {
-  font-family: ProximaNova-Regular;
-  src: url(/fonts/ProximaNova-Regular.ttf);
+.head {
+  display: block;
+  max-width: 1140px;
+  width: 90%;
+  margin: 0px auto 0px auto;
+  padding-top: 76px;
+  font-size: 20px;
 }
-@font-face {
-  font-family: ProximaNova-Bold;
-  src: url(/fonts/ProximaNova-Bold.ttf);
-}
-@font-face {
-  font-family: AdobeInvisFont;
-  src: url();
-}
-@font-face {
-  font-family: MyriadPro-Regular;
-  src: url();
-}
-.container {
+.navbar {
   display: flex;
-  flex-direction:column ;
-  /* border: blue solid 2px; */
-  align-items:center;
+  margin-bottom: 160px;
+  /* border: 1px solid black; */
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  color: #95989A;
+  text-transform: uppercase;
+}
+.social {
+  display: flex;
+}
+.btn-social {
+  margin-right: 10px;
+}
+.img-social {
+  width: 32px;
+  height: 32px;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: black 1px solid; */
+}
+
+.tag {
+  display: block;
+  margin-bottom: 20px;
 }
 .name {
-  display: inline-block;
-  margin: 100px 0px 120px 0px;
-  font-family: ProximaNova-Regular;
-  font-size: 36px;
+  display: block;
+  font-size: 48px;
+  font-weight: bold;
 }
-.card-window {
+.description {
+  display: block;
+ width: 90%;
+  font-size: 20px;
+  margin-top: 27px;
+  margin-bottom: 16px;
+}
+.price-tag {
+  display: block;
+  margin-bottom: 20px;
+}
+.price {
+  display: block;
+  font-size: 48px;
+  color: #525F7F;
+  margin-bottom: 50px;
+}
+.buttons {
   display: flex;
-  width: 1140px;
-  flex-direction:row ;
-  justify-content: space-between;
-/* border: black solid 2px; */
 }
-.card {
-  /* background-color: beige; */
-  display: flex;
-  flex-direction:column ;
-  align-items: center;
-  /* border: red solid 2px; */
-  width: 265px;
-  height: 370px;
-}
-.card-description {
-  margin-bottom: 10px;
-  font-family: ProximaNova-Light;
-  font-size: 18px;
-}
-.card-price {
-  margin-bottom: 10px;
-  font-family: ProximaNova-Bold;
-  font-size: 18px;
-}
-.card-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 55px;
-  border: #23bac1 solid 1px;
-  color: #23bac1;
-  font-family: ProximaNova-Bold;
-  font-size: 16px;
+.btn {
+  /* background-color: gray; */
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 20px 30px;
+  color: #ffffff;
   text-decoration: none;
+  box-shadow: 0 3px 6px gray;
+  border-radius: 6px;
 }
-.img-border {
+.buy {
+  background-color: #2DCE89;
+}
+.trial {
+  background-color: #5E72E4;
+}
+.about {
+  display: block;
+  max-width: 1140px;
+  width: 90%;
+  margin: 0px auto 0px auto;
+  padding-top: 91px;
+}
+.about-box-window {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 212px;
-  height: 212px;
-  overflow: hidden;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 131px;
+}
+.about-box {
+  width: 23%;
+}
+.about-box-img {
+  margin-bottom: 40px;
+}
+.about-box-text {
+  font-size: 16px;
+  color: #525F7F;
+}
+.people-content {
+  display: block;
+  max-width: 1140px;
+  width: 90%;
+  margin: 0px auto 0px auto;
+  padding-top: 97px;
+}
+.people-img-window {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 65px;
+  margin-bottom: 112px;
+}
+.people-img {
+  display: flex;
+  width: 362px;
+  height: 254px;
+  margin-bottom: 36px;
+}
+.footer {
+  background-color: #32325F;
+}
+.footer-content {
+  display: block;
+  max-width: 1140px;
+  width: 90%;
+  margin: 0px auto 0px auto;
+  padding-top: 97px;
+}
+.footer-window {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 104px;
+}
+.footer-box {
+  color: #ffffff;
+  display: block;
+  width: 362px;
+}
+.footer-tag {
+  display: block;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 36px;
+}
+.footer-description {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
 }

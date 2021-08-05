@@ -1,0 +1,36 @@
+* {
+    /* border: 1px black  solid; */
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+#id1 {
+
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 80px;
+    font-size: 24px;
+}
+.row {
+    justify-content: center;
+}
+.col {
+    display: flex;
+    justify-content: center;
+}
+.box {
+    display: flex;
+    width: 122px;
+    height: 130px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    height: 78px;
+
+}

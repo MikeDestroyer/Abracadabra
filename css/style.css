@@ -1,22 +1,24 @@
 * {
     /* border: 1px black  solid; */
     font-family: Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
+    
+    box-sizing: border-box;
 }
-#id1 {
-
-    display: flex;
-    justify-content: center;
-    padding-top: 70px;
-    padding-bottom: 80px;
-    font-size: 24px;
+body {
+    color: #32325F;
+    font-size: 20px;
+    font-weight: 400;
 }
-.row {
-    justify-content: center;
+.header-main {
+    margin-top: 132px;
 }
-.col {
-    display: flex;
-    justify-content: center;
+.header-main-title, .about-title, .people-section-title {
+    font-size: 48px;
+    font-weight: 700;
+}
+.price {
+    font-size: 48px;
+    font-weight: 400;
 }
 .box {
     display: flex;
@@ -26,11 +28,50 @@
     justify-content: space-between;
     align-items: center;
 }
+.buttons {
+    margin-bottom: 190px;
+}
 .img-border {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85px;
-    height: 78px;
+    /* width: 85px;
+    height: 78px; */
+}
+.img {
+    max-width: 100%;
+}
+.about-subtitle {
+    margin-top: 70px;
+}
+.about-section-items {
+    margin-top: 100px;
+    padding-bottom: 130px;
+    
+}
+.about-section-text {
+    margin-top: 40px;
+    font-size: 16px;
+}
+.people-section {
+    padding-bottom: 38px;
+}
+.people-section-container {
+    padding-top: 90px;
+}
+.people-section-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
 
+footer {
+    background-color: #32325F;
+    color: #ffffff;
+}
+.footer-item-span {
+    font-size: 24px;
+}
+.footer-item-info {
+    font-size: 16px;
 }

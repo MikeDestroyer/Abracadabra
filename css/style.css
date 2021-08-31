@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+}
+.navbar-block {
+  display: inherit;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar__info {
+  display: inherit;
+  background-color: yellow;
+}
+.navbar__contacts .adress {
+  display: block;
+}
+.navbar__contacts .phone {
+  display: block;
+}
+.navbar__button {
+  padding: 18px 12px;
+  border: solid black 1px;
+}/*# sourceMappingURL=style.css.map */

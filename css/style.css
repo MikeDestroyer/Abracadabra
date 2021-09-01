@@ -4,19 +4,95 @@
 .navbar-block {
   display: inherit;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 .navbar__info {
   display: inherit;
-  background-color: yellow;
+}
+.navbar__contacts {
+  margin-right: 30px;
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
 }
 .navbar__contacts .adress {
-  display: block;
+  display: inherit;
+  justify-content: flex-end;
+  font-size: 13px;
+  font-weight: 300;
 }
 .navbar__contacts .phone {
-  display: block;
+  display: inherit;
+  justify-content: flex-end;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  outline: none;
+  text-decoration: none;
+}
+.navbar__contacts .phone:hover {
+  color: #000000;
+  outline: none;
+  text-decoration: none;
 }
 .navbar__button {
-  padding: 18px 12px;
-  border: solid black 1px;
+  width: 170px;
+  height: 49px;
+  display: inherit;
+  justify-content: center;
+  color: #000000;
+  font-size: 13px;
+  font-weight: 700;
+  align-items: center;
+  padding: 30px 18px;
+  background-color: #ffd200;
+  border-radius: 10px;
+  outline: none;
+  text-decoration: none;
+  line-height: 1em;
+}
+.navbar__button:hover {
+  color: #000000;
+  outline: none;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 760px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 560px;
+  }
+
+  .navbar__contacts {
+    display: none;
+  }
+}
+@media (max-width: 567px) {
+  .container {
+    width: 310px;
+  }
+
+  .navbar__button {
+    font-size: 10px;
+    padding: 26px 14px;
+  }
+
+  .navbar__logo img {
+    max-width: 60%;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    width: 90%;
+  }
 }/*# sourceMappingURL=style.css.map */

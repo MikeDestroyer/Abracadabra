@@ -1,3 +1,37 @@
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+@media (max-width: 1200px) {
+    .container {
+        width: 760px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        width: 560px;
+    }
+    .navbar__contacts {
+        display: none;
+    }
+}
+@media (max-width: 567px) {
+    .container {
+        width: 310px;
+    }
+    .navbar__button {
+        font-size: 10px;
+        padding: 26px 14px;
+    }
+    .navbar__logo img {
+        max-width: 60%;
+    }
+}
+@media (max-width: 320px) {
+    .container {
+        width: 90%;
+    }
+    .navbar__logo {
+        // width: 40%;
+    }
 }

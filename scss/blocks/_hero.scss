@@ -5,8 +5,7 @@
     &-block {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        max-width: 100%;
+        align-items: flex-start;
     }
     &-image-block {
         display: flex;
@@ -15,58 +14,57 @@
             width: 100%;
             max-width: 100%;
             height: auto;
+            box-shadow: 10px 5px 20px #dfdfdf;
         }
     }
     &-text {
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         width: 45%;
         &__title {
             display: flex;
             font-size: 41px;
-            font-weight: 700;
-            padding-bottom: 30px;
+            @include f-bold;
+            padding-top: 28px;
+            // padding-bottom: 30px;
+            line-height: 1.35em;
+            margin-left: -3px;
         }
         &__subtitle {
             display: flex;
             font-size: 20px;
-            font-weight: 700;
-            padding-bottom: 60px;
+            @include f-bold;
+            padding-top: 33px;
+            padding-bottom: 66px;
         }
     }
     &-list {
         display: flex;
         flex-direction: column;
+        line-height: 24px;
+        &__element {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            max-width: 320px;
+            &:first-child {
+                padding-bottom: 26px;
+                font-size: 14px;
+            }
 
-        &__element1 {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding-bottom: 30px;
-            max-width: 320px;
+            &:nth-child(2) {
+                padding-bottom: 22px;
+                font-size: 14px;
+            }
+
+            &:last-child {
+                padding-bottom: 33px;
+                font-size: 14px;
+            }
         }
-        &__element2 {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding-bottom: 30px;
-            max-width: 320px;
-        }
-        &__element3 {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding-bottom: 30px;
-            max-width: 320px;
-        }
-        &__image1 {
-            margin-right: 10px;
-        }
-        &__image2 {
-            margin-right: 10px;
-        }
-        &__image3 {
-            margin-right: 10px;
+        &__image {
+            margin-right: 30px;
         }
     }
 }

@@ -32,6 +32,7 @@
                 color: $clr-text;
                 outline: none;
                 text-decoration: none;
+                color: lighten($clr-text, 30%);
             }
         }
     }
@@ -50,8 +51,9 @@
         outline: none;
         text-decoration: none;
         line-height: 1em;
+        transition: 0.1s;
         &:hover {
-            color: $clr-text;
+            background-color: lighten($clr-main, 10%);
             outline: none;
             text-decoration: none;
         }

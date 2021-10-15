@@ -1,0 +1,35 @@
+.offer {
+    &-block {
+        display: flex;
+        padding-top: 84px;
+    }
+    &-text {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    &__title {
+        @include f-bold;
+        font-size: 24px;
+        width: 350px;
+    }
+    &__subtitle {
+        width: 240px;
+    }
+    &__form{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 495px;
+    }
+    &__input {
+        display: flex;
+        flex-direction: column;
+    }
+    &__button {
+        width: 495px;
+        height: 70px;
+        margin-top: 20px;
+    }
+}

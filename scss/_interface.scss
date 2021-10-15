@@ -8,6 +8,36 @@ body {
 .container {
     padding: 0;
 }
+.button {
+    display: inherit;
+    justify-content: center;
+    color: $clr-text;
+    font-size: 13px;
+    @include f-bold;
+    align-items: center;
+    padding: 20px 18px;
+    background-color: $clr-main;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    text-decoration: none;
+    line-height: 1em;
+    transition: 0.1s;
+    &:hover {
+        background-color: lighten($clr-main, 10%);
+        outline: none;
+        text-decoration: none;
+    }
+}
+.input {
+    display: flex;
+    align-items: center;
+    width: 240px;
+    height: 65px;
+    padding-left: 33px;
+    border-radius: 10px;
+    border: 1px solid $clr-brdr;
+}
 @media (min-width: 1200px) {
     .container,
     .container-lg,

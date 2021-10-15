@@ -6,30 +6,54 @@
     &-text {
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 495px;
     }
     &__title {
         @include f-bold;
         font-size: 24px;
         width: 350px;
+        margin-bottom: 27px;
+        @media (max-width: 430px) {
+            width: 100%;
+        }
     }
     &__subtitle {
         width: 240px;
+        margin-bottom: 27px;
     }
-    &__form{
+    &__form {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: 495px;
     }
     &__input {
         display: flex;
         flex-direction: column;
+        margin-bottom: 20px;
+        @media (max-width: 567px) {
+            width: 100%;
+        }
     }
     &__button {
-        width: 495px;
+        width: 100%;
         height: 70px;
-        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    &-info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        &__spam {
+            &:first-child {
+                width: 50%;
+            }
+            &:last-child {
+                width: 42%;
+                & b {
+                    @include f-bold;
+                }
+            }
+        }
     }
 }

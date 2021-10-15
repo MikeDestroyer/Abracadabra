@@ -7,6 +7,13 @@ body {
 }
 .container {
     padding: 0;
+    @media (max-width: 1200px) {
+        width: 760px;
+        padding: 0 15px;
+    }
+    @media (max-width: 567px) {
+        width: 100%;
+    }
 }
 .button {
     display: inherit;
@@ -48,10 +55,6 @@ body {
     }
 }
 @media (max-width: 1200px) {
-    .container {
-        width: 760px;
-        padding: 0 15px;
-    }
     .hero {
         &-block {
             flex-direction: column;

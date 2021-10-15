@@ -8,9 +8,7 @@
     font-weight: 300;
     font-style: normal;
 }
-@mixin f-reg {
-    font-family: "Museo Sans Cyrl 300";
-}
+
 @font-face {
     font-family: "Museo Sans Cyrl 700";
     src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
@@ -18,8 +16,5 @@
         url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"),
         url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
     font-weight: 700;
-    font-style: bold;
-}
-@mixin f-bold {
-    font-family: "Museo Sans Cyrl 700";
+    font-style: normal;
 }

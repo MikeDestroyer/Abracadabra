@@ -1,12 +1,18 @@
 .offer {
+
+    display: flex;
+    background-image: url(../../images/offer-img.png) ; 
+    background-repeat: no-repeat;
+    background-position: right;
     &-block {
         display: flex;
-        padding-top: 84px;
+        justify-content: flex-start;
     }
     &-text {
         display: flex;
         flex-direction: column;
-        width: 495px;
+        padding: 84px 0;
+        width: 50%;
     }
     &__title {
         @include f-bold;
@@ -55,5 +61,18 @@
                 }
             }
         }
+    }
+    &__block-image {
+        display: flex;
+        justify-content: flex-start;
+        width: 50%;
+        height: auto;
+        overflow: visible;
+
+    }
+    &__image {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
     }
 }

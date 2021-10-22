@@ -4,8 +4,6 @@
             "format": "expanded",
             "extensionName": ".css",
             "savePath": "/css",
-            "savePathSegmentKeys": null,
-            "savePathReplaceSegmentsWith": null
         }
     ]
 }

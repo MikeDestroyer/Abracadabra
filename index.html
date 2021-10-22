@@ -24,7 +24,7 @@
             <span class="adress">Калуга, Москва, МО</span>
             <a href="tel:+7(495)42-251-31" class="phone">+7 (495) 42-251-31</a>
           </div>
-          <a href="#" class="button navbar__button">Перезвоните мне</a>
+          <a href="#" class="button navbar__button" id="button">Перезвоните мне</a>
         </div>
       </div>
     </div>
@@ -84,14 +84,20 @@
         <!-- <div class="offer__block-image">
           <img src="/images/offer-image.png" alt="" class="image offer__image">
         </div> -->
-**      </div>
+     </div>
     </div>
   </section>
-  <div class="modal">
+  <div class="modal" id="modal">
     <div class="modal-dialog">
-      <div class="modal-dialog__button">&times;</div>
+      <button class="button modal-dialog__close" id="close">&times;</button>
+      <h4 class="modal-dialog__title">
+        Че закибербулили тебя да?<br>
+        Ну не знаю выключи компьютер хз<br>
+        Иди нахуй отсюда
+      </h4>
     </div>
   </div>
+  <script src="/js/main.js"></script>
 </body>
 
 </html>

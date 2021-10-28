@@ -502,7 +502,10 @@ section {
   text-align: center;
   width: 600px;
   max-width: 100%;
-  margin-top: 100px;
+  margin: 100px auto 100px auto;
+}
+
+.portfolio__slider {
   margin-bottom: 100px;
 }
 
@@ -514,7 +517,7 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 200px;
-  padding-top: 10px;
+  padding-top: 50px;
   margin: auto;
 }
 

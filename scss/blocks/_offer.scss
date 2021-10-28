@@ -4,6 +4,7 @@
     background-image: url(../../images/offer-img.png) ; 
     background-repeat: no-repeat;
     background-position: right;
+    background-position-x: 101%;
     &-block {
         display: flex;
         justify-content: flex-start;
@@ -12,7 +13,7 @@
         display: flex;
         flex-direction: column;
         padding: 84px 0;
-        width: 50%;
+        width: 495px;
     }
     &__title {
         @include f-bold;
@@ -42,9 +43,9 @@
         }
     }
     &__button {
-        width: 100%;
         height: 70px;
         margin-bottom: 20px;
+        width: 100%;
     }
     &-info {
         display: flex;

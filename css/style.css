@@ -22,6 +22,15 @@
 
 body {
   padding-bottom: 1000px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .container {
@@ -231,21 +240,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
 
 .hero-image-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: absolute;
+  left: 51%;
 }
 
 .hero-image-block__image {
@@ -348,6 +353,7 @@ body {
   background-image: url(../../images/offer-img.png);
   background-repeat: no-repeat;
   background-position: right;
+  background-position-x: 101%;
 }
 
 .offer-block {
@@ -368,7 +374,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 84px 0;
-  width: 50%;
+  width: 495px;
 }
 
 .offer__title {
@@ -422,9 +428,9 @@ body {
 }
 
 .offer__button {
-  width: 100%;
   height: 70px;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .offer-info {
@@ -469,6 +475,47 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 100%;
+}
+
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../../images/portfolio-bckgrnd.png);
+  background-position-x: -1%;
+  background-repeat: no-repeat;
+}
+
+.portfolio__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 30px;
+  text-align: center;
+  width: 600px;
+  max-width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.slider__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 200px;
+  padding-top: 10px;
+  margin: auto;
 }
 
 .modal {

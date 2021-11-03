@@ -1,0 +1,16 @@
+* {
+    font-family: sans-serif;
+}
+body {
+    background-color: $clr-main;
+    color: $clr-txt;
+}
+b {
+    color: $clr-hlight;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}

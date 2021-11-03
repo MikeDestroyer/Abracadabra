@@ -1,0 +1,35 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #0a0e11;
+  color: #ffffff;
+}
+
+b {
+  color: #d02928;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.hero {
+  display: flex;
+}
+.hero-block {
+  display: flex;
+  flex-direction: column;
+}
+.hero-title {
+  display: flex;
+}
+
+.subtitle-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */

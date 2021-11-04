@@ -1,17 +1,48 @@
 .hero {
     display: flex;
+    padding-top: 58px;
     &-block {
         display: flex;
         flex-direction: column;
     }
-    &-title {
-        display: flex;
+    &__title {
+        font-family: "Montserrat Bold";
+        font-size: 48px;
+        line-height: 59px;
+        font-weight: 700;
+        max-width: 700px;
+        text-transform: uppercase;
+        padding-bottom: 35px;
+    }
+    .red-text {
+        font-family: "Montserrat Black";
+        color: $clr-hlight;
+    }
+    &__description {
+        background-color: $clr-hlight;
+        width: 583px;
+        height: 63px;
+        clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+    }
+    &__span {
+        font-family: "Roboto Regular";
+        width: 510px;
+        margin: auto;
+        font-size: 20px;
+        text-align: center;
+        vertical-align: auto;
     }
 }
 .subtitle {
-    &-block {
+    &__img {
+        padding-right: 9px;
+    }
+    &__block {
+        font-family: "Roboto Regular";
         display: flex;
         flex-direction: row;
         align-items: center;
+        max-width: 460px;
+        padding-bottom: 24px;
     }
 }

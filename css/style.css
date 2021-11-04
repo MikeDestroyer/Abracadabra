@@ -1,5 +1,41 @@
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../assets/fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../assets/fonts/Montserrat-ExtraBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat Black";
+  src: url("../assets/fonts/Montserrat-Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Black";
+  src: url("../assets/fonts/ProximaNova-Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Norms Regular";
+  src: url("../assets/fonts/TTNorms-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Norms Black";
+  src: url("../assets/fonts/TTNorms-Black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
-  font-family: sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -7,29 +43,137 @@ body {
   color: #ffffff;
 }
 
-b {
-  color: #d02928;
-}
-
-.title {
-  display: flex;
-  flex-direction: column;
-  text-transform: uppercase;
+section {
+  padding: 50px 0;
 }
 
 .hero {
   display: flex;
+  padding-top: 58px;
 }
 .hero-block {
   display: flex;
   flex-direction: column;
 }
-.hero-title {
-  display: flex;
+.hero__title {
+  font-family: "Montserrat Bold";
+  font-size: 48px;
+  line-height: 59px;
+  font-weight: 700;
+  max-width: 700px;
+  text-transform: uppercase;
+  padding-bottom: 35px;
+}
+.hero .red-text {
+  font-family: "Montserrat Black";
+  color: #d02928;
+}
+.hero__description {
+  background-color: #d02928;
+  width: 583px;
+  height: 63px;
+  -webkit-clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+          clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+}
+.hero__span {
+  font-family: "Roboto Regular";
+  width: 510px;
+  margin: auto;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: auto;
 }
 
-.subtitle-block {
+.subtitle__img {
+  padding-right: 9px;
+}
+.subtitle__block {
+  font-family: "Roboto Regular";
   display: flex;
   flex-direction: row;
   align-items: center;
+  max-width: 460px;
+  padding-bottom: 24px;
+}
+
+.offer {
+  padding-top: 101px;
+}
+.offer__border {
+  padding: 75px 120px;
+  border: 5px solid #d02928;
+  box-shadow: 0 0 30px #d02928, inset 0 0 30px #d02928;
+  box-sizing: border-box;
+  border-radius: 100px;
+}
+.offer-block {
+  display: flex;
+  justify-content: space-between;
+}
+.offer__title {
+  font-family: "Proxima Nova Black";
+  text-transform: uppercase;
+  width: 534px;
+  height: 351px;
+  font-size: 56px;
+  line-height: 120.5%;
+  text-align: center;
+}
+.offer__title .red-text {
+  color: #d02928;
+}
+.offer__form {
+  width: 360px;
+  height: 338px;
+}
+
+.form__input {
+  font-family: "TT Norms Regular";
+  background-color: #0a0e11;
+  color: #ffffff;
+  width: 360px;
+  height: 64px;
+  padding: 35px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  margin-bottom: 15px;
+}
+.form__input :active {
+  background-color: #0a0e11;
+  color: #ffffff;
+}
+.form__checkbox-block {
+  margin-left: 48px;
+  margin-bottom: 15px;
+}
+.form__checkbox-block__label {
+  margin-left: 5px;
+}
+.form__checkbox {
+  width: 16px;
+  height: 16px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+.form__label {
+  font-family: "TT Norms Regular";
+  font-size: 16px;
+}
+.form__label .red-text {
+  color: #d02928;
+}
+.form__button {
+  font-family: "TT Norms Black";
+  background-color: #d02928;
+  border: none;
+  box-shadow: 0 0 30px #d02928;
+  color: #ffffff;
+  font-size: 22px;
+  text-transform: uppercase;
+  width: 360px;
+  height: 64px;
+  border-radius: 25px;
+}
+.form__button :hover {
+  background-color: #dd4f4e;
 }/*# sourceMappingURL=style.css.map */

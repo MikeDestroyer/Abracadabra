@@ -1,0 +1,83 @@
+.offer {
+    padding-top: 101px;
+    &__border {
+        padding: 75px 120px;
+        border: 5px solid $clr-hlight;
+        box-shadow: 0 0 30px $clr-hlight, inset 0 0 30px $clr-hlight;
+        box-sizing: border-box;
+        border-radius: 100px;
+    }
+    &-block {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-family: "Proxima Nova Black";
+        text-transform: uppercase;
+        width: 534px;
+        height: 351px;
+        font-size: 56px;
+        line-height: 120.5%;
+        text-align: center;
+        .red-text {
+            color: $clr-hlight;
+        }
+    }
+    &__form {
+        width: 360px;
+        height: 338px;
+    }
+}
+.form {
+    &__input {
+        font-family: "TT Norms Regular";
+        background-color: $clr-main;
+        color: $clr-txt;
+        width: 360px;
+        height: 64px;
+        padding: 35px;
+        border: 3px solid rgba(255, 255, 255, 0.5);
+        border-radius: 25px;
+        margin-bottom: 15px;
+
+        :active {
+            background-color: $clr-main;
+            color: $clr-txt;
+        }
+    }
+    &__checkbox-block {
+        margin-left: 48px;
+        margin-bottom: 15px;
+        &__label {
+            margin-left: 5px;
+        }
+    }
+    &__checkbox {
+        width: 16px;
+        height: 16px;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 10px;
+    }
+    &__label {
+        font-family: "TT Norms Regular";
+        font-size: 16px;
+        .red-text {
+            color: $clr-hlight;
+        }
+    }
+    &__button {
+        font-family: "TT Norms Black";
+        background-color: $clr-hlight;
+        border: none;
+        box-shadow: 0 0 30px $clr-hlight;
+        color: $clr-txt;
+        font-size: 22px;
+        text-transform: uppercase;
+        width: 360px;
+        height: 64px;
+        border-radius: 25px;
+        :hover {
+            background-color: lighten($clr-hlight, 10%);
+        }
+    }
+}

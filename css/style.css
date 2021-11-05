@@ -37,16 +37,26 @@
 body {
   background-color: #07080a;
   background-image: url(/assets/img/hero-background.png);
-  background-position-x: 45%;
+  background-position: 100% 0;
   background-repeat: no-repeat;
   color: #ffffff;
+  filter: blur();
+}
+
+section {
+  padding: 50px;
 }
 
 .spacer {
+  content: "";
+  position: absolute;
+  top: 750px;
   height: 110px;
+  width: 100%;
   background: #0a0e11;
   filter: blur(20px);
   margin-bottom: 20px;
+  z-index: -1;
 }
 
 .input {
@@ -54,10 +64,19 @@ body {
   height: 64px;
 }
 
-@media (max-with: 1400px) {
-  .input {
-    width: 270px;
-    height: 48px;
+@media (max-width: 1200px) {
+  body {
+    background-position: 15% 0;
+  }
+}
+@media (max-width: 991px) {
+  body {
+    background-position: 30% 0;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    background-position: 40% 0;
   }
 }
 .hero {
@@ -115,6 +134,18 @@ body {
     line-height: 48px;
   }
 }
+@media (max-width: 575px) {
+  .hero__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 429px) {
+  .hero__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
 .offer__border {
   padding: 75px 120px;
   border: 5px solid #d02928;
@@ -159,7 +190,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 48px;
+  margin-left: 8%;
   margin-bottom: 15px;
 }
 .form__checkbox-block__label {
@@ -215,7 +246,7 @@ body {
   background-color: #dd4f4e;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1399px) {
   .offer__border {
     padding: 75px 75px;
   }
@@ -223,7 +254,7 @@ body {
     padding: 26px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .offer {
     padding-top: 50px;
   }
@@ -248,12 +279,35 @@ body {
     width: 80%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .offer__title {
-    font-size: 48px;
-    margin-bottom: 0;
+    width: auto;
+    font-size: 36px;
+    height: auto;
+    margin-bottom: 35px;
   }
   .offer__border {
     padding: 40px 20px;
+  }
+}
+@media (max-width: 575px) {
+  .offer__title {
+    font-size: 28px;
+  }
+
+  .form__input {
+    padding: 25px;
+  }
+  .form__button {
+    font-size: 18px;
+  }
+}
+@media (max-width: 429px) {
+  .offer__title {
+    font-size: 22px;
+  }
+
+  .form__button {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */

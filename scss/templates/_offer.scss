@@ -1,5 +1,4 @@
 .offer {
-    padding-top: 101px;
     &__border {
         padding: 75px 120px;
         border: 5px solid $clr-hlight;
@@ -14,7 +13,7 @@
     &__title {
         font-family: "Proxima Nova Black";
         text-transform: uppercase;
-        width: 534px;
+        width: 560px;
         height: 351px;
         font-size: 56px;
         line-height: 120.5%;
@@ -25,7 +24,6 @@
     }
     &__form {
         width: 360px;
-        height: 338px;
     }
 }
 .form {
@@ -33,8 +31,6 @@
         font-family: "TT Norms Regular";
         background-color: $clr-main;
         color: $clr-txt;
-        width: 360px;
-        height: 64px;
         padding: 35px;
         border: 3px solid rgba(255, 255, 255, 0.5);
         border-radius: 25px;
@@ -46,6 +42,9 @@
         }
     }
     &__checkbox-block {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         margin-left: 48px;
         margin-bottom: 15px;
         &__label {
@@ -53,14 +52,39 @@
         }
     }
     &__checkbox {
-        width: 16px;
-        height: 16px;
-        background: rgba(255, 255, 255, 0.7);
-        border-radius: 10px;
-    }
-    &__label {
+        appearance: none;
+        &::before {
+            background-color: rgba(255, 255, 255, 0.5);
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border-radius: 8px;
+            margin-right: 8px;
+        }
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         font-family: "TT Norms Regular";
         font-size: 16px;
+
+        &:checked {
+            &::before {
+                background-color: $clr-hlight;
+                content: "";
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                border: 4px solid $clr-form;
+                flex-shrink: 0;
+                flex-grow: 0;
+                border-radius: 8px;
+            }
+        }
+    }
+    &__label {
         .red-text {
             color: $clr-hlight;
         }
@@ -73,11 +97,65 @@
         color: $clr-txt;
         font-size: 22px;
         text-transform: uppercase;
-        width: 360px;
-        height: 64px;
         border-radius: 25px;
-        :hover {
+        transition: 300ms;
+        &:hover {
             background-color: lighten($clr-hlight, 10%);
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .offer {
+        &__border {
+            padding: 75px 75px;
+        }
+        &__title {
+            // font-size: 48px;
+        }
+    }
+    .form {
+        &__input {
+            padding: 26px;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .offer {
+        padding-top: 50px;
+        &-block {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__title {
+            font-size: 56px;
+            margin-bottom: 50px;
+        }
+        &__form {
+            width: 80%;
+        }
+    }
+    .form {
+        &__input {
+            padding: 35px;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .offer {
+        &__form {
+            width: 80%;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .offer {
+        &__title {
+            font-size: 48px;
+            margin-bottom: 0;
+        }
+        &__border {
+            padding: 40px 20px;
         }
     }
 }

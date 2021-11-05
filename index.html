@@ -56,6 +56,7 @@
 
     </div>
   </section>
+  <section class="spacer"></section>
   <section class="offer">
     <div class="container">
       <div class="offer__border">
@@ -65,14 +66,15 @@
             Скорее оставь заявку и получи <b class="red-text">скидку до 35%</b>
           </h1>
           <form action="#" class="offer__form">
-            <input class="form__input" type="text" name="name" placeholder="Ваше имя">
-            <input class="form__input" type="addres" placeholder="Ваш город">
-            <input class="form__input" type="text" name="mail" placeholder="Ваш e-mail">
+            <input class="input form__input" type="text" name="name" placeholder="Ваше имя">
+            <input class="input form__input" type="addres" placeholder="Ваш город">
+            <input class="input form__input" type="text" name="mail" placeholder="Ваш e-mail">
             <div class="form__checkbox-block">
-              <input class="form__checkbox" type="checkbox">
-              <label class="form__label">Согласен с <b class="red-text">договорм офферы</b></label>
+              <input class="form__checkbox" id="agreement" type="checkbox">
+              <label class="form__label" for="agreement">Согласен с<b class="red-text"> договорм офферы</b></label>
             </div>
-            <input type="button" class="form__button" value="Оставить заявку">
+            <button type="submit" class="input form__button">Оставить заявку</button>
+
           </form>
         </div>
       </div>

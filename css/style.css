@@ -34,19 +34,32 @@
   font-weight: normal;
   font-style: normal;
 }
-* {
-  box-sizing: border-box;
-}
-
 body {
-  background-color: #0a0e11;
+  background-color: #07080a;
+  background-image: url(/assets/img/hero-background.png);
+  background-position-x: 45%;
+  background-repeat: no-repeat;
   color: #ffffff;
 }
 
-section {
-  padding: 50px 0;
+.spacer {
+  height: 110px;
+  background: #0a0e11;
+  filter: blur(20px);
+  margin-bottom: 20px;
 }
 
+.input {
+  width: 100%;
+  height: 64px;
+}
+
+@media (max-with: 1400px) {
+  .input {
+    width: 270px;
+    height: 48px;
+  }
+}
 .hero {
   display: flex;
   padding-top: 58px;
@@ -70,18 +83,18 @@ section {
 }
 .hero__description {
   background-color: #d02928;
-  width: 583px;
-  height: 63px;
-  -webkit-clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
-          clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+  max-width: 583px;
+  min-height: 63px;
+  -webkit-clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
+          clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
+  z-index: 1;
 }
 .hero__span {
   font-family: "Roboto Regular";
-  width: 510px;
   margin: auto;
   font-size: 20px;
   text-align: center;
-  vertical-align: auto;
+  padding: 0 25px;
 }
 
 .subtitle__img {
@@ -92,12 +105,15 @@ section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  max-width: 460px;
+  max-width: 470px;
   padding-bottom: 24px;
 }
 
-.offer {
-  padding-top: 101px;
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 36px;
+    line-height: 48px;
+  }
 }
 .offer__border {
   padding: 75px 120px;
@@ -113,7 +129,7 @@ section {
 .offer__title {
   font-family: "Proxima Nova Black";
   text-transform: uppercase;
-  width: 534px;
+  width: 560px;
   height: 351px;
   font-size: 56px;
   line-height: 120.5%;
@@ -124,25 +140,25 @@ section {
 }
 .offer__form {
   width: 360px;
-  height: 338px;
 }
 
 .form__input {
   font-family: "TT Norms Regular";
-  background-color: #0a0e11;
+  background-color: #07080a;
   color: #ffffff;
-  width: 360px;
-  height: 64px;
   padding: 35px;
   border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 25px;
   margin-bottom: 15px;
 }
 .form__input :active {
-  background-color: #0a0e11;
+  background-color: #07080a;
   color: #ffffff;
 }
 .form__checkbox-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   margin-left: 48px;
   margin-bottom: 15px;
 }
@@ -150,14 +166,36 @@ section {
   margin-left: 5px;
 }
 .form__checkbox {
-  width: 16px;
-  height: 16px;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 10px;
-}
-.form__label {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-family: "TT Norms Regular";
   font-size: 16px;
+}
+.form__checkbox::before {
+  background-color: rgba(255, 255, 255, 0.5);
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 8px;
+  margin-right: 8px;
+}
+.form__checkbox:checked::before {
+  background-color: #d02928;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 4px solid #808080;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 8px;
 }
 .form__label .red-text {
   color: #d02928;
@@ -170,10 +208,52 @@ section {
   color: #ffffff;
   font-size: 22px;
   text-transform: uppercase;
-  width: 360px;
-  height: 64px;
   border-radius: 25px;
+  transition: 300ms;
 }
-.form__button :hover {
+.form__button:hover {
   background-color: #dd4f4e;
+}
+
+@media (max-width: 1400px) {
+  .offer__border {
+    padding: 75px 75px;
+  }
+  .form__input {
+    padding: 26px;
+  }
+}
+@media (max-width: 1200px) {
+  .offer {
+    padding-top: 50px;
+  }
+  .offer-block {
+    flex-direction: column;
+    align-items: center;
+  }
+  .offer__title {
+    font-size: 56px;
+    margin-bottom: 50px;
+  }
+  .offer__form {
+    width: 80%;
+  }
+
+  .form__input {
+    padding: 35px;
+  }
+}
+@media (max-width: 991px) {
+  .offer__form {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .offer__title {
+    font-size: 48px;
+    margin-bottom: 0;
+  }
+  .offer__border {
+    padding: 40px 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

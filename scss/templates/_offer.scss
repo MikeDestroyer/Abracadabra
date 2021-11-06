@@ -53,6 +53,7 @@
     }
     &__checkbox {
         appearance: none;
+        display: flex;
         &::before {
             background-color: rgba(255, 255, 255, 0.5);
             content: "";
@@ -64,12 +65,6 @@
             border-radius: 8px;
             margin-right: 8px;
         }
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        font-family: "TT Norms Regular";
-        font-size: 16px;
-
         &:checked {
             &::before {
                 background-color: $clr-hlight;
@@ -85,6 +80,7 @@
         }
     }
     &__label {
+        font-family: "TT Norms Regular";
         .red-text {
             color: $clr-hlight;
         }
@@ -110,9 +106,9 @@
         &__border {
             padding: 75px 75px;
         }
-        &__title {
-            // font-size: 48px;
-        }
+        // &__title {
+        //     // font-size: 48px;
+        // }
     }
     .form {
         &__input {
@@ -179,12 +175,22 @@
 @media (max-width: 429px) {
     .offer {
         &__title {
-            font-size: 22px;
+            font-size: 20px;
+        }
+        &__border {
+            border: 3px solid #d02928;
+            box-shadow: 0 0 30px #d02928, inset 0 0 30px #d02928;
+            padding: 30px 6px;
         }
     }
     .form {
         &__button {
             font-size: 14px;
+            box-shadow: 0 0 20px #d02928;
+        }
+        &__input {
+            padding: 14px;
+
         }
     }
 }

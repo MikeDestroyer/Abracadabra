@@ -4,43 +4,50 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Montserrat Bold";
   src: url("../assets/fonts/Montserrat-ExtraBold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Montserrat Black";
   src: url("../assets/fonts/Montserrat-Black.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Proxima Nova Black";
   src: url("../assets/fonts/ProximaNova-Black.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "TT Norms Regular";
   src: url("../assets/fonts/TTNorms-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "TT Norms Black";
   src: url("../assets/fonts/TTNorms-Black.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 body {
   background-color: #07080a;
   background-image: url(/assets/img/hero-background.png);
   background-position: 100% 0;
   background-repeat: no-repeat;
   color: #ffffff;
-  filter: blur();
+  -webkit-filter: blur();
+          filter: blur();
 }
 
 section {
@@ -54,7 +61,8 @@ section {
   height: 110px;
   width: 100%;
   background: #0a0e11;
-  filter: blur(20px);
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
   margin-bottom: 20px;
   z-index: -1;
 }
@@ -64,29 +72,54 @@ section {
   height: 64px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   body {
     background-position: 15% 0;
   }
 }
-@media (max-width: 991px) {
+
+@media (max-width: 990px) {
   body {
     background-position: 30% 0;
   }
 }
-@media (max-width: 576px) {
+
+@media (max-width: 575px) {
   body {
     background-position: 40% 0;
   }
+  section {
+    padding: 0px;
+  }
+  .input {
+    height: 48px;
+  }
 }
+
+@media (max-width: 429px) {
+  body {
+    line-height: 1.4;
+    font-size: 0.8rem;
+  }
+}
+
 .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 58px;
 }
+
 .hero-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .hero__title {
   font-family: "Montserrat Bold";
   font-size: 48px;
@@ -96,10 +129,12 @@ section {
   text-transform: uppercase;
   padding-bottom: 35px;
 }
+
 .hero .red-text {
   font-family: "Montserrat Black";
   color: #d02928;
 }
+
 .hero__description {
   background-color: #d02928;
   max-width: 583px;
@@ -108,6 +143,7 @@ section {
           clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);
   z-index: 1;
 }
+
 .hero__span {
   font-family: "Roboto Regular";
   margin: auto;
@@ -119,11 +155,19 @@ section {
 .subtitle__img {
   padding-right: 9px;
 }
+
 .subtitle__block {
   font-family: "Roboto Regular";
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 470px;
   padding-bottom: 24px;
 }
@@ -134,29 +178,49 @@ section {
     line-height: 48px;
   }
 }
+
 @media (max-width: 575px) {
+  .hero {
+    padding-top: 24px;
+  }
+  .hero__span {
+    font-size: 14px;
+  }
   .hero__title {
     font-size: 28px;
     line-height: 32px;
   }
 }
+
 @media (max-width: 429px) {
   .hero__title {
     font-size: 20px;
     line-height: 26px;
   }
+  .subtitle__img {
+    max-width: 46px;
+  }
 }
+
 .offer__border {
   padding: 75px 120px;
   border: 5px solid #d02928;
-  box-shadow: 0 0 30px #d02928, inset 0 0 30px #d02928;
-  box-sizing: border-box;
+  -webkit-box-shadow: 0 0 30px #d02928, inset 0 0 30px #d02928;
+          box-shadow: 0 0 30px #d02928, inset 0 0 30px #d02928;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 100px;
 }
+
 .offer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .offer__title {
   font-family: "Proxima Nova Black";
   text-transform: uppercase;
@@ -166,9 +230,11 @@ section {
   line-height: 120.5%;
   text-align: center;
 }
+
 .offer__title .red-text {
   color: #d02928;
 }
+
 .offer__form {
   width: 360px;
 }
@@ -182,41 +248,55 @@ section {
   border-radius: 25px;
   margin-bottom: 15px;
 }
+
 .form__input :active {
   background-color: #07080a;
   color: #ffffff;
 }
+
 .form__checkbox-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 8%;
   margin-bottom: 15px;
 }
+
 .form__checkbox-block__label {
   margin-left: 5px;
 }
+
 .form__checkbox {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-family: "TT Norms Regular";
-  font-size: 16px;
 }
+
 .form__checkbox::before {
   background-color: rgba(255, 255, 255, 0.5);
   content: "";
   display: inline-block;
   width: 16px;
   height: 16px;
-  flex-shrink: 0;
-  flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
   border-radius: 8px;
   margin-right: 8px;
 }
+
 .form__checkbox:checked::before {
   background-color: #d02928;
   content: "";
@@ -224,24 +304,36 @@ section {
   width: 16px;
   height: 16px;
   border: 4px solid #808080;
-  flex-shrink: 0;
-  flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
   border-radius: 8px;
 }
+
+.form__label {
+  font-family: "TT Norms Regular";
+}
+
 .form__label .red-text {
   color: #d02928;
 }
+
 .form__button {
   font-family: "TT Norms Black";
   background-color: #d02928;
   border: none;
-  box-shadow: 0 0 30px #d02928;
+  -webkit-box-shadow: 0 0 30px #d02928;
+          box-shadow: 0 0 30px #d02928;
   color: #ffffff;
   font-size: 22px;
   text-transform: uppercase;
   border-radius: 25px;
+  -webkit-transition: 300ms;
   transition: 300ms;
 }
+
 .form__button:hover {
   background-color: #dd4f4e;
 }
@@ -254,13 +346,19 @@ section {
     padding: 26px;
   }
 }
+
 @media (max-width: 1199px) {
   .offer {
     padding-top: 50px;
   }
   .offer-block {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .offer__title {
     font-size: 56px;
@@ -269,16 +367,17 @@ section {
   .offer__form {
     width: 80%;
   }
-
   .form__input {
     padding: 35px;
   }
 }
+
 @media (max-width: 991px) {
   .offer__form {
     width: 80%;
   }
 }
+
 @media (max-width: 767px) {
   .offer__title {
     width: auto;
@@ -290,11 +389,11 @@ section {
     padding: 40px 20px;
   }
 }
+
 @media (max-width: 575px) {
   .offer__title {
     font-size: 28px;
   }
-
   .form__input {
     padding: 25px;
   }
@@ -302,12 +401,24 @@ section {
     font-size: 18px;
   }
 }
+
 @media (max-width: 429px) {
   .offer__title {
-    font-size: 22px;
+    font-size: 20px;
   }
-
+  .offer__border {
+    border: 3px solid #d02928;
+    -webkit-box-shadow: 0 0 30px #d02928, inset 0 0 30px #d02928;
+            box-shadow: 0 0 30px #d02928, inset 0 0 30px #d02928;
+    padding: 30px 6px;
+  }
   .form__button {
     font-size: 14px;
+    -webkit-box-shadow: 0 0 20px #d02928;
+            box-shadow: 0 0 20px #d02928;
   }
-}/*# sourceMappingURL=style.css.map */
+  .form__input {
+    padding: 14px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

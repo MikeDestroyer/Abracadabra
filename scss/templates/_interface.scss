@@ -24,22 +24,39 @@ section {
     width: 100%;
     height: 64px;
 }
-@media (max-width: 1400px) {
-    .input {
-    }
-}
-@media (max-width: 1200px) {
+// @media (max-width: 1399px) {
+//     .input {
+//     }
+// }
+@media (max-width: 1199px) {
     body {
         background-position: 15% 0;
     }
 }
-@media (max-width: 991px) {
+@media (max-width: 990px) {
     body {
         background-position: 30% 0;
     }
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     body {
         background-position: 40% 0;
+
     }
+    section {
+        padding: 0px;
+    }
+    .input {
+        height: 48px;
+    }
+}
+@media (max-width: 429px) {
+    body {
+        line-height: 1.4;
+        font-size: 0.8rem;
+
+    }
+    // .input {
+    //     height: 42px;
+    // }
 }

@@ -57,9 +57,18 @@
 }
 @media (max-width: 575px) {
     .hero {
+        padding-top: 24px;
+        &__span {
+            font-size: 14px;
+        }
         &__title {
             font-size: 28px;
             line-height: 32px;
+        }
+    }
+    .subtitle {
+        &__img {
+            // width: 15%;
         }
     }
 }
@@ -68,6 +77,11 @@
         &__title {
             font-size: 20px;
             line-height: 26px;
+        }
+    }
+    .subtitle {
+        &__img {
+            max-width: 46px;
         }
     }
 }
